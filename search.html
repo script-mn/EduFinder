@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - EduFinder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduFinder</span>
+                    </a>
+                </div>
+                <div class="search-header">
+                    <input type="text" id="searchInput" placeholder="Search institutions or programs..." class="search-input-header">
+                    <button id="toggleMapBtn" class="btn btn-outline">
+                        <i class="fas fa-map"></i>
+                        <span id="mapToggleText">Show Map</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-page">
+        <div class="container">
+            <!-- Search Info -->
+            <div class="search-info">
+                <h1 id="searchTitle">Educational Institutions near "Kathmandu"</h1>
+                <p id="searchCount">Found 4 institutions matching your criteria</p>
+            </div>
+
+            <div class="search-layout">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar">
+                    <div class="filter-card">
+                        <div class="filter-header">
+                            <i class="fas fa-filter"></i>
+                            <h3>Filters</h3>
+                        </div>
+                        <div class="filter-content">
+                            <!-- Institution Type -->
+                            <div class="filter-group">
+                                <label>Institution Type</label>
+                                <select id="typeFilter" class="filter-select">
+                                    <option value="all">All Types</option>
+                                    <option value="university">University</option>
+                                    <option value="college">College</option>
+                                    <option value="school">School</option>
+                                </select>
+                            </div>
+
+                            <!-- Programs -->
+                            <div class="filter-group">
+                                <label>Programs</label>
+                                <select id="programFilter" class="filter-select">
+                                    <option value="all">All Programs</option>
+                                    <option value="bsc.csit">BSC.CSIT</option>
+                                    <option value="bba">BBA</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="medicine">Medicine</option>
+                                    <option value="plus two science">Plus Two Science</option>
+                                </select>
+                            </div>
+
+                            <!-- Rating -->
+                            <div class="filter-group">
+                                <label>Minimum Rating</label>
+                                <select id="ratingFilter" class="filter-select">
+                                    <option value="all">Any Rating</option>
+                                    <option value="4.0">4.0+ Stars</option>
+                                    <option value="4.5">4.5+ Stars</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="search-results">
+                    <!-- Map placeholder -->
+                    <div id="mapContainer" class="map-container" style="display: none;">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Map integration would be implemented here</p>
+                        </div>
+                    </div>
+
+                    <!-- Institution Cards -->
+                    <div id="institutionsList" class="institutions-list">
+                        <!-- Institutions will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

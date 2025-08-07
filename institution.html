@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Details - EduFinder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="search.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Search Results
+            </a>
+        </div>
+    </header>
+
+    <!-- Institution Details -->
+    <div class="institution-page">
+        <!-- Hero Section -->
+        <div class="institution-hero">
+            <div class="container">
+                <div class="institution-hero-content">
+                    <div class="institution-main">
+                        <img id="institutionImage" src="https://via.placeholder.com/800x300" alt="Institution" class="institution-image">
+                        
+                        <div class="institution-info">
+                            <div class="institution-header">
+                                <div>
+                                    <h1 id="institutionName">Tribhuvan University</h1>
+                                    <div class="institution-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span id="institutionAddress">Kirtipur, Kathmandu, Nepal</span>
+                                    </div>
+                                    <div class="institution-meta">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <span id="institutionRating">4.5</span>
+                                        </div>
+                                        <span id="institutionType" class="badge">University</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p id="institutionDescription">
+                                Tribhuvan University is the oldest and largest university in Nepal. It was established in 1959 and offers a wide range of undergraduate and graduate programs across various disciplines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="institution-sidebar">
+                        <div class="quick-info-card">
+                            <h3>Quick Info</h3>
+                            <div class="quick-info-content">
+                                <div class="info-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <p class="info-label">Established</p>
+                                        <p id="establishedYear">1959</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-users"></i>
+                                    <div>
+                                        <p class="info-label">Students</p>
+                                        <p id="studentCount">25,000</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-book-open"></i>
+                                    <div>
+                                        <p class="info-label">Faculty</p>
+                                        <p id="facultyCount">1,200</p>
+                                    </div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-phone"></i>
+                                        Contact Institution
+                                    </button>
+                                    <button class="btn btn-outline">
+                                        <i class="fas fa-globe"></i>
+                                        Visit Website
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Information -->
+        <div class="institution-details">
+            <div class="container">
+                <div class="tabs">
+                    <div class="tab-list">
+                        <button class="tab-trigger active" data-tab="overview">Overview</button>
+                        <button class="tab-trigger" data-tab="programs">Programs</button>
+                        <button class="tab-trigger" data-tab="admission">Admission</button>
+                        <button class="tab-trigger" data-tab="facilities">Facilities</button>
+                        <button class="tab-trigger" data-tab="entrance">Entrance Prep</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div id="overview" class="tab-panel active">
+                            <div class="tab-grid">
+                                <div class="info-card">
+                                    <h3>About the Institution</h3>
+                                    <p id="aboutDescription">
+                                        Tribhuvan University is the oldest and largest university in Nepal. It was established in 1959 and offers a wide range of undergraduate and graduate programs across various disciplines.
+                                    </p>
+                                    <div class="info-details">
+                                        <div class="detail-row">
+                                            <span class="detail-label">Type:</span>
+                                            <span id="detailType">University</span>
+                                        </div>
+                                        <div class="detail-row">
+                                            <span class="detail-label">Established:</span>
+                                            <span id="detailEstablished">1959</span>
+                                        </div>
+                                        <div class="detail-row">
+                                            <span class="detail-label">Total Students:</span>
+                                            <span id="detailStudents">25,000</span>
+                                        </div>
+                                        <div class="detail-row">
+                                            <span class="detail-label">Faculty Members:</span>
+                                            <span id="detailFaculty">1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-card">
+                                    <h3>Contact Information</h3>
+                                    <div class="contact-info">
+                                        <div class="contact-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span id="contactAddress">Kirtipur, Kathmandu, Nepal</span>
+                                        </div>
+                                        <div class="contact-item">
+                                            <i class="fas fa-phone"></i>
+                                            <span id="contactPhone">+977-1-4330433</span>
+                                        </div>
+                                        <div class="contact-item">
+                                            <i class="fas fa-globe"></i>
+                                            <span id="contactWebsite">www.tu.edu.np</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Programs Tab -->
+                        <div id="programs" class="tab-panel">
+                            <div id="programsList" class="programs-list">
+                                <!-- Programs will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Admission Tab -->
+                        <div id="admission" class="tab-panel">
+                            <div class="info-card">
+                                <h3>Admission Process</h3>
+                                <p class="card-description">Follow these steps to apply for admission</p>
+                                <div id="admissionSteps" class="admission-steps">
+                                    <!-- Steps will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Facilities Tab -->
+                        <div id="facilities" class="tab-panel">
+                            <div class="info-card">
+                                <h3>Campus Facilities</h3>
+                                <p class="card-description">Available facilities and amenities</p>
+                                <div id="facilitiesList" class="facilities-list">
+                                    <!-- Facilities will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Entrance Prep Tab -->
+                        <div id="entrance" class="tab-panel">
+                            <div class="entrance-prep">
+                                <div class="info-card">
+                                    <h3>Entrance Examination Details</h3>
+                                    <p class="card-description">Information about TU Entrance Exam</p>
+                                    <div class="entrance-details">
+                                        <div class="entrance-section">
+                                            <h4>Exam Structure</h4>
+                                            <div class="entrance-info">
+                                                <div class="detail-row">
+                                                    <span>Duration:</span>
+                                                    <span>2 hours</span>
+                                                </div>
+                                                <div class="detail-row">
+                                                    <span>Total Marks:</span>
+                                                    <span>100</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entrance-section">
+                                            <h4>Subjects</h4>
+                                            <div class="subjects-list">
+                                                <span class="badge">English</span>
+                                                <span class="badge">Mathematics</span>
+                                                <span class="badge">Science</span>
+                                                <span class="badge">General Knowledge</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-card">
+                                    <h3>Preparation Tips</h3>
+                                    <div id="preparationTips" class="preparation-tips">
+                                        <!-- Tips will be populated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="institution.js"></script>
+</body>
+</html>

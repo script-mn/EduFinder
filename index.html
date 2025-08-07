@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFinder - Find Your Perfect Educational Institution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>EduFinder</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#about">About</a>
+                    <a href="guide.html">Education Guide</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    Find Your Perfect
+                    <span class="text-primary">Educational Institution</span>
+                </h2>
+                <p class="hero-description">
+                    Discover schools, colleges, and universities near you. Get complete guidance on courses, fees, admission
+                    processes, and entrance preparations - all in one place.
+                </p>
+
+                <!-- Search Section -->
+                <div class="search-card">
+                    <div class="search-form">
+                        <div class="search-input-wrapper">
+                            <input 
+                                type="text" 
+                                id="locationInput" 
+                                placeholder="Enter your location or city"
+                                class="search-input"
+                            >
+                        </div>
+                        <div class="search-buttons">
+                            <button id="detectLocationBtn" class="btn btn-outline">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="detectLocationText">Use My Location</span>
+                            </button>
+                            <button id="searchBtn" class="btn btn-primary">
+                                <i class="fas fa-search"></i>
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h3 class="section-title">Why Choose EduFinder?</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Location-Based Search</h4>
+                    <p>Find institutions near you with automatic location detection</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Comprehensive Profiles</h4>
+                    <p>Detailed information about courses, fees, and admission processes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h4>Course Guidance</h4>
+                    <p>Understand different programs and find the right fit for you</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Entrance Preparation</h4>
+                    <p>Get guidance on entrance exams and preparation materials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Programs -->
+    <section class="popular-programs">
+        <div class="container">
+            <h3 class="section-title">Popular Programs</h3>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        <h4>BSc.CSIT</h4>
+                        <span class="badge">Technology</span>
+                    </div>
+                    <p class="program-info">
+                        <i class="fas fa-users"></i>
+                        45 institutions available
+                    </p>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h4>BBA</h4>
+                        <span class="badge">Business</span>
+                    </div>
+                    <p class="program-info">
+                        <i class="fas fa-users"></i>
+                        67 institutions available
+                    </p>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h4>MBBS</h4>
+                        <span class="badge">Medical</span>
+                    </div>
+                    <p class="program-info">
+                        <i class="fas fa-users"></i>
+                        23 institutions available
+                    </p>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h4>Engineering</h4>
+                        <span class="badge">Technology</span>
+                    </div>
+                    <p class="program-info">
+                        <i class="fas fa-users"></i>
+                        89 institutions available
+                    </p>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h4>Plus Two Science</h4>
+                        <span class="badge">Higher Secondary</span>
+                    </div>
+                    <p class="program-info">
+                        <i class="fas fa-users"></i>
+                        156 institutions available
+                    </p>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h4>BCA</h4>
+                        <span class="badge">Technology</span>
+                    </div>
+                    <p class="program-info">
+                        <i class="fas fa-users"></i>
+                        78 institutions available
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h3>New to Higher Education?</h3>
+                <p>
+                    Don't worry! Our comprehensive guide will help you understand different programs, admission processes, and
+                    career paths.
+                </p>
+                <a href="guide.html" class="btn btn-secondary">
+                    <i class="fas fa-book-open"></i>
+                    Read Our Education Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduFinder</span>
+                    </div>
+                    <p>Your trusted companion for finding the perfect educational institution.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="search.html">Search Institutions</a></li>
+                        <li><a href="guide.html">Education Guide</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduFinder. All rights reserved to Mukesh Neupane.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

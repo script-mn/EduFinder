@@ -1,0 +1,1390 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #2563eb;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #2563eb;
+}
+
+.logo h1,
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: #2563eb;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #1f2937;
+}
+
+/* Search Header */
+.search-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-input-header {
+    width: 300px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2563eb;
+    text-decoration: none;
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: #1d4ed8;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+    padding: 4rem 0;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.text-primary {
+    color: #2563eb;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Search Card */
+.search-card {
+    max-width: 32rem;
+    margin: 0 auto;
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.search-input-wrapper {
+    flex: 1;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.search-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.btn-secondary:hover {
+    background: #f8fafc;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #6b7280;
+    border: 1px solid #d1d5db;
+}
+
+.btn-outline:hover {
+    background: #f9fafb;
+    color: #374151;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    margin-bottom: 1rem;
+}
+
+.feature-icon i {
+    font-size: 2rem;
+    color: #2563eb;
+}
+
+.feature-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.feature-card p {
+    color: #6b7280;
+}
+
+/* Popular Programs */
+.popular-programs {
+    padding: 4rem 0;
+    background: white;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.program-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.program-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.program-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.program-info {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #6b7280;
+}
+
+/* Badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    background: #f3f4f6;
+    color: #374151;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.badge-easy {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge-medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge-hard {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* CTA Section */
+.cta {
+    background: #2563eb;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+.footer {
+    background: #1f2937;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo i {
+    font-size: 1.5rem;
+}
+
+.footer-logo span {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-section p {
+    color: #9ca3af;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 2rem;
+    text-align: center;
+    color: #9ca3af;
+}
+
+/* Search Page Styles */
+.search-page {
+    min-height: 100vh;
+    background: #f9fafb;
+}
+
+.search-info {
+    margin-bottom: 1.5rem;
+    padding: 2rem 0;
+}
+
+.search-info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.search-info p {
+    color: #6b7280;
+}
+
+.search-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+}
+
+/* Filters */
+.filters-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.filter-card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-header h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.filter-content {
+    padding: 1.5rem;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group:last-child {
+    margin-bottom: 0;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    background: white;
+}
+
+/* Map Container */
+.map-container {
+    background: white;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.map-placeholder {
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    border-radius: 0.75rem;
+    background: #f9fafb;
+}
+
+.map-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Institution Cards */
+.institutions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.institution-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.institution-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.institution-card-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+}
+
+.institution-image {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    background: #f3f4f6;
+}
+
+.institution-details {
+    flex: 1;
+}
+
+.institution-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.institution-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.institution-location {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.institution-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.rating i {
+    color: #fbbf24;
+}
+
+.programs-offered {
+    margin-bottom: 0.75rem;
+}
+
+.programs-offered p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.institution-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fee-info {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.fee-info p {
+    font-weight: 500;
+}
+
+.institution-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Institution Page Styles */
+.institution-page {
+    min-height: 100vh;
+    background: #f9fafb;
+}
+
+.institution-hero {
+    background: white;
+    padding: 2rem 0;
+}
+
+.institution-hero-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.institution-image {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.institution-info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.institution-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.institution-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.quick-info-card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 100px;
+}
+
+.quick-info-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.quick-info-content {
+    padding: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-item i {
+    color: #9ca3af;
+    width: 1.25rem;
+}
+
+.info-label {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.info-item p:last-child {
+    color: #6b7280;
+}
+
+.action-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Tabs */
+.institution-details {
+    padding: 2rem 0;
+}
+
+.tabs {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tab-list {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tab-trigger {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: none;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab-trigger.active {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+}
+
+.tab-trigger:hover {
+    color: #374151;
+}
+
+.tab-content {
+    padding: 2rem;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.tab-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.info-card {
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.info-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #374151;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contact-item i {
+    color: #9ca3af;
+    width: 1.25rem;
+}
+
+/* Programs List */
+.programs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.program-card-detailed {
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.program-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.program-card-header h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.program-card-header p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.program-details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.program-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.program-detail-item i {
+    color: #9ca3af;
+}
+
+.program-detail-item div p:first-child {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.program-detail-item div p:last-child {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Admission Steps */
+.admission-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.admission-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    color: #6b7280;
+}
+
+/* Facilities List */
+.facilities-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.facility-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.facility-item::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #2563eb;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Entrance Prep */
+.entrance-prep {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.entrance-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.entrance-section h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.entrance-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.subjects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.preparation-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.tip-item::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #10b981;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    flex-shrink: 0;
+}
+
+/* Guide Page Styles */
+.guide-hero {
+    background: #2563eb;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.guide-hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.guide-hero-content p {
+    font-size: 1.25rem;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.guide-content {
+    padding: 3rem 0;
+}
+
+.guide-section {
+    margin-bottom: 4rem;
+}
+
+.guide-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 2rem;
+}
+
+/* Education Levels */
+.education-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.level-card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.level-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.level-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.level-header p {
+    color: #6b7280;
+}
+
+.level-content {
+    padding: 1.5rem;
+}
+
+.level-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Programs Explained */
+.programs-explained {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.program-explained-card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.program-explained-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.program-explained-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.program-explained-header p {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.program-explained-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.program-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.program-detail i {
+    color: #9ca3af;
+    margin-top: 0.125rem;
+}
+
+.program-detail span {
+    font-size: 0.875rem;
+}
+
+.program-detail div .detail-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.program-detail div p:last-child {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Program Institutions Styles */
+.program-institutions {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.program-institutions h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.institutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.institution-item {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 0.2s;
+}
+
+.institution-item:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+.institution-name {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.institution-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.rating {
+    font-size: 0.75rem;
+    color: #fbbf24;
+}
+
+.institution-fee {
+    font-size: 0.75rem;
+    color: #059669;
+    font-weight: 500;
+}
+
+/* Admission Process */
+.admission-process {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.step-content p {
+    color: #6b7280;
+}
+
+/* FAQ */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .search-form {
+        flex-direction: column;
+    }
+    
+    .search-buttons {
+        flex-direction: column;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .filters-sidebar {
+        position: static;
+    }
+    
+    .institution-card-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .institution-hero-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .entrance-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .level-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .programs-explained {
+        grid-template-columns: 1fr;
+    }
+    
+    .facilities-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .search-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .search-input-header {
+        width: 100%;
+    }
+    
+    .institutions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .program-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
